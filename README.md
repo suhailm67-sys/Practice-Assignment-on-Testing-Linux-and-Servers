@@ -65,3 +65,48 @@ Set up a cron job to run every 5 minutes: crontab -e; */5 * * * * /path/to/monit
 # 7. Verify Password Policy
 sudo chage -l sarah
 
+# Task 3: Backup Configuration for Web Servers
+# 1. Create Backup Directory
+1. sudo mkdir /backups
+2. sudo chmod 777 /backups
+# 2. Create Backup Script for Sarah (Apache)
+1. sudo nano /home/sarah/apache_backup.sh
+2. #!/bin/bash
+
+DATE=$(date +%F)
+BACKUP_FILE="/backups/apache_backup_$DATE.tar.gz"
+LOG_FILE="/backups/apache_backup.log"
+
+tar -czf $BACKUP_FILE /etc/httpd/ /var/www/html/ 2>/dev/null
+
+echo "Backup created: $BACKUP_FILE" >> $LOG_FILE
+
+echo "Verifying backup..." >> $LOG_FILE
+tar -tzf $BACKUP_FILE >> $LOG_FILE
+
+echo "---------------------------------" >> $LOG_FILE
+# 3. Make it executable
+1. sudo chmod +x /home/sarah/apache_backup.sh
+2. sudo chown sarah:sarah /home/sarah/apache_backup.sh
+# 4. Create Backup Script for Mike (Nginx)
+1. sudo nano /home/mike/nginx_backup.sh
+2. #!/bin/bash
+
+DATE=$(date +%F)
+BACKUP_FILE="/backups/nginx_backup_$DATE.tar.gz"
+LOG_FILE="/backups/nginx_backup.log"
+
+tar -czf $BACKUP_FILE /etc/nginx/ /usr/share/nginx/html/ 2>/dev/null
+
+echo "Backup created: $BACKUP_FILE" >> $LOG_FILE
+
+echo "Verifying backup..." >> $LOG_FILE
+tar -tzf $BACKUP_FILE >> $LOG_FILE
+
+echo "---------------------------------" >> $LOG_FILE
+# 5. Make it executable
+1. sudo chmod +x /home/mike/nginx_backup.sh
+2. sudo chown mike:mike /home/mike/nginx_backup.sh
+# 6. Schedule Cron Jobs
+1. For Sarah: sudo crontab -u sarah -e;   0 0 * * 2 /home/sarah/apache_backup.sh
+2. For Mike: sudo crontab -u mike -e;  0 0 * * 2 /home/mike/nginx_backup.sh
