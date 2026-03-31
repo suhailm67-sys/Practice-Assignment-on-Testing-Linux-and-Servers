@@ -37,5 +37,3 @@ Practice Assignment on Testing, Linux and Servers
   echo "" >> $LOGFILE
 2. Make Script Executable: chmod +x monitor.sh
 3. Run Script: sudo ./monitor.sh
-
-
