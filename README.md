@@ -3,9 +3,9 @@ Practice Assignment on Testing, Linux and Servers
 
 # Task 1: System Monitoring Setup
 # 1. Install Monitoring Tools:
-   # sudo apt update
-   # sudo apt install htop -y
-   # sudo apt install nmon -y
+sudo apt update
+sudo apt install htop -y
+sudo apt install nmon -y
 # 2. Disk Usage Monitoring:
    a. Check overall disk usage
       # df -h
