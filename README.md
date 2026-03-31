@@ -9,3 +9,8 @@ Practice Assignment on Testing, Linux and Servers
 # 2. Disk Usage Monitoring:
 1. Check overall disk usage: df -h
 2. Check directory-level usage: du -sh /home/*
+# 3. Process Monitoring
+1. View running processes: ps aux
+2. Find top CPU-consuming processes: ps aux --sort=-%cpu | head -10
+3. Find top memory-consuming processes: ps aux --sort=-%mem | head -10
+# 4. Create Monitoring Logs (Reporting System)
