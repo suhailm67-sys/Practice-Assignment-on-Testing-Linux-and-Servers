@@ -34,8 +34,11 @@ Practice Assignment on Testing, Linux and Servers
   ps aux --sort=-%mem | head -5 >> $LOGFILE
   echo "====================================" >> $LOGFILE
   echo "" >> $LOGFILE
+  
 2. Make Script Executable: chmod +x monitor.sh
+
 3. Run Script: sudo ./monitor.sh
+
 4. View Logs: cat /var/log/system_monitor.log
 # 5. Automate Logging
 Set up a cron job to run every 5 minutes: crontab -e; */5 * * * * /path/to/monitor.sh
