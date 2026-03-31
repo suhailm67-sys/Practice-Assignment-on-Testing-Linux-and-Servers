@@ -42,3 +42,26 @@ Practice Assignment on Testing, Linux and Servers
 4. View Logs: cat /var/log/system_monitor.log
 # 5. Automate Logging
 Set up a cron job to run every 5 minutes: crontab -e; */5 * * * * /path/to/monitor.sh
+
+# Task 2: User Management and Access Control
+# 1. Create Users (Sarah & Mike)
+1. sudo adduser sarah
+2. sudo adduser mike
+# 2. Set / Update Passwords
+1. sudo passwd sarah
+2. sudo passwd mike
+# 3. Create Dedicated Workspaces
+1. sudo mkdir -p /home/sarah/workspace
+2. sudo mkdir -p /home/mike/workspace
+# 4. Assign Ownership
+1. sudo chown -R sarah:sarah /home/sarah/workspace
+2. sudo chown -R mike:mike /home/mike/workspace
+# 5. Set Permissions
+1. sudo chmod 777 /home/sarah/workspace
+2. sudo chmod 777 /home/mike/workspace
+# 6. Set Password Expiration Policy
+1. sudo chage -m 1 -M 30 -W 7 sarah
+2. sudo chage -m 1 -M 30 -W 7 mike
+# 7. Verify Password Policy
+sudo chage -l sarah
+
