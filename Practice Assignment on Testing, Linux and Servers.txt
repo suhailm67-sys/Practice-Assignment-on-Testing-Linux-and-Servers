@@ -1,0 +1,434 @@
+suhail@DESKTOP-8TUHE2O:~$ sudo apt update
+sudo apt install htop -y
+[sudo] password for suhail:
+Get:1 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Hit:2 http://archive.ubuntu.com/ubuntu noble InRelease
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:4 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1551 kB]
+Get:5 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:6 http://security.ubuntu.com/ubuntu noble-security/main Translation-en [250 kB]
+Get:7 http://security.ubuntu.com/ubuntu noble-security/main amd64 Components [21.5 kB]
+Get:8 http://security.ubuntu.com/ubuntu noble-security/main amd64 c-n-f Metadata [10.7 kB]
+Get:9 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1166 kB]
+Get:10 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [15.0 MB]
+Get:11 http://security.ubuntu.com/ubuntu noble-security/universe Translation-en [225 kB]
+Get:12 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [74.2 kB]
+Get:13 http://security.ubuntu.com/ubuntu noble-security/universe amd64 c-n-f Metadata [22.9 kB]
+Get:14 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [2701 kB]
+Get:15 http://security.ubuntu.com/ubuntu noble-security/restricted Translation-en [627 kB]
+Get:16 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Components [212 B]
+Get:17 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 c-n-f Metadata [544 B]
+Get:18 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [28.8 kB]
+Get:19 http://security.ubuntu.com/ubuntu noble-security/multiverse Translation-en [6980 B]
+Get:20 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [212 B]
+Get:21 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 c-n-f Metadata [396 B]
+Get:22 http://archive.ubuntu.com/ubuntu noble/universe Translation-en [5982 kB]
+Get:23 http://archive.ubuntu.com/ubuntu noble/universe amd64 Components [3871 kB]
+Get:24 http://archive.ubuntu.com/ubuntu noble/universe amd64 c-n-f Metadata [301 kB]
+Get:25 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [269 kB]
+Get:26 http://archive.ubuntu.com/ubuntu noble/multiverse Translation-en [118 kB]
+Get:27 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Components [35.0 kB]
+Get:28 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 c-n-f Metadata [8328 B]
+Get:29 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1847 kB]
+Get:30 http://archive.ubuntu.com/ubuntu noble-updates/main Translation-en [339 kB]
+Get:31 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [177 kB]
+Get:32 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 c-n-f Metadata [16.9 kB]
+Get:33 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1665 kB]
+Get:34 http://archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [323 kB]
+Get:35 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [386 kB]
+Get:36 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 c-n-f Metadata [34.2 kB]
+Get:37 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [2837 kB]
+Get:38 http://archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [656 kB]
+Get:39 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Components [212 B]
+Get:40 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 c-n-f Metadata [556 B]
+Get:41 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [32.1 kB]
+Get:42 http://archive.ubuntu.com/ubuntu noble-updates/multiverse Translation-en [7520 B]
+Get:43 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+Get:44 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 c-n-f Metadata [500 B]
+Get:45 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [40.4 kB]
+Get:46 http://archive.ubuntu.com/ubuntu noble-backports/main Translation-en [9208 B]
+Get:47 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [7364 B]
+Get:48 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 c-n-f Metadata [368 B]
+Get:49 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [30.7 kB]
+Get:50 http://archive.ubuntu.com/ubuntu noble-backports/universe Translation-en [18.2 kB]
+Get:51 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [13.2 kB]
+Get:52 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 c-n-f Metadata [1480 B]
+Get:53 http://archive.ubuntu.com/ubuntu noble-backports/restricted amd64 Components [216 B]
+Get:54 http://archive.ubuntu.com/ubuntu noble-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:55 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Packages [780 B]
+Get:56 http://archive.ubuntu.com/ubuntu noble-backports/multiverse Translation-en [372 B]
+Get:57 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Components [212 B]
+Get:58 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 c-n-f Metadata [116 B]
+Fetched 41.1 MB in 11s (3619 kB/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+65 packages can be upgraded. Run 'apt list --upgradable' to see them.
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  libnl-3-200 libnl-genl-3-200
+Suggested packages:
+  lm-sensors strace
+The following NEW packages will be installed:
+  htop libnl-3-200 libnl-genl-3-200
+0 upgraded, 3 newly installed, 0 to remove and 65 not upgraded.
+Need to get 238 kB of archives.
+After this operation, 665 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libnl-3-200 amd64 3.7.0-0.3build1.1 [55.7 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libnl-genl-3-200 amd64 3.7.0-0.3build1.1 [12.2 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble/main amd64 htop amd64 3.3.0-4build1 [171 kB]
+Fetched 238 kB in 2s (103 kB/s)
+Selecting previously unselected package libnl-3-200:amd64.
+(Reading database ... 40805 files and directories currently installed.)
+Preparing to unpack .../libnl-3-200_3.7.0-0.3build1.1_amd64.deb ...
+Unpacking libnl-3-200:amd64 (3.7.0-0.3build1.1) ...
+Selecting previously unselected package libnl-genl-3-200:amd64.
+Preparing to unpack .../libnl-genl-3-200_3.7.0-0.3build1.1_amd64.deb ...
+Unpacking libnl-genl-3-200:amd64 (3.7.0-0.3build1.1) ...
+Selecting previously unselected package htop.
+Preparing to unpack .../htop_3.3.0-4build1_amd64.deb ...
+Unpacking htop (3.3.0-4build1) ...
+Setting up libnl-3-200:amd64 (3.7.0-0.3build1.1) ...
+Setting up libnl-genl-3-200:amd64 (3.7.0-0.3build1.1) ...
+Setting up htop (3.3.0-4build1) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for hicolor-icon-theme (0.17-2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.7) ...
+suhail@DESKTOP-8TUHE2O:~$ sudo apt install nmon -y
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  libncurses6
+The following NEW packages will be installed:
+  libncurses6 nmon
+0 upgraded, 2 newly installed, 0 to remove and 65 not upgraded.
+Need to get 183 kB of archives.
+After this operation, 528 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble/main amd64 libncurses6 amd64 6.4+20240113-1ubuntu2 [112 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble/universe amd64 nmon amd64 16p+debian-1 [71.4 kB]
+Fetched 183 kB in 2s (82.5 kB/s)
+Selecting previously unselected package libncurses6:amd64.
+(Reading database ... 40829 files and directories currently installed.)
+Preparing to unpack .../libncurses6_6.4+20240113-1ubuntu2_amd64.deb ...
+Unpacking libncurses6:amd64 (6.4+20240113-1ubuntu2) ...
+Selecting previously unselected package nmon.
+Preparing to unpack .../nmon_16p+debian-1_amd64.deb ...
+Unpacking nmon (16p+debian-1) ...
+Setting up libncurses6:amd64 (6.4+20240113-1ubuntu2) ...
+Setting up nmon (16p+debian-1) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.7) ...
+suhail@DESKTOP-8TUHE2O:~$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdd       1007G  1.6G  955G   1% /
+rootfs          7.8G  2.7M  7.8G   1% /init
+none            7.8G     0  7.8G   0% /dev/shm
+none            7.8G  520K  7.8G   1% /run
+none            7.8G     0  7.8G   0% /run/lock
+none            7.8G   76K  7.8G   1% /run/user
+tmpfs           1.6G   20K  1.6G   1% /run/user/1000
+drivers         477G  398G   79G  84% /usr/lib/wsl/drivers
+none            7.8G     0  7.8G   0% /usr/lib/wsl/lib
+none            7.8G  4.0K  7.8G   1% /mnt/wsl
+none            7.8G   76K  7.8G   1% /mnt/wslg/versions.txt
+none            7.8G   76K  7.8G   1% /mnt/wslg/doc
+none            7.8G     0  7.8G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+C:\             477G  398G   79G  84% /mnt/c
+D:\             233G   89G  144G  39% /mnt/d
+E:\             1.9T  1.6T  244G  87% /mnt/e
+G:\             210G  164G   47G  78% /mnt/g
+suhail@DESKTOP-8TUHE2O:~$ du -sh /home/*
+20K     /home/suhail
+suhail@DESKTOP-8TUHE2O:~$ ps aux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.3  0.0  21984 12584 ?        Ss   16:16   0:00 /sbin/init
+root           2  0.0  0.0   3120  1920 ?        Sl   16:16   0:00 /init
+root           9  0.0  0.0   3136  1792 ?        Sl   16:16   0:00 plan9 --control-socket 7 --log-level 4 --server-fd 8
+root          55  0.0  0.0  42164 15368 ?        S<s  16:16   0:00 /usr/lib/systemd/systemd-journald
+root         109  0.0  0.0  25144  6144 ?        Ss   16:16   0:00 /usr/lib/systemd/systemd-udevd
+systemd+     121  0.0  0.0  21460 11904 ?        Ss   16:16   0:00 /usr/lib/systemd/systemd-resolved
+systemd+     122  0.0  0.0  91028  7680 ?        Ssl  16:16   0:00 /usr/lib/systemd/systemd-timesyncd
+root         187  0.0  0.0   4236  2432 ?        Ss   16:16   0:00 /usr/sbin/cron -f -P
+message+     188  0.0  0.0   9616  4864 ?        Ss   16:16   0:00 @dbus-daemon --system --address=systemd: --nofork --n
+root         195  0.0  0.0  17964  8320 ?        Ss   16:16   0:00 /usr/lib/systemd/systemd-logind
+root         197  0.0  0.0 1756620 12800 ?       Ssl  16:16   0:00 /usr/libexec/wsl-pro-service
+root         200  0.0  0.0   3160  1920 hvc0     Ss+  16:16   0:00 /sbin/agetty -o -p -- \u --noclear --keep-baud - 1152
+root         217  0.0  0.0   3116  1792 tty1     Ss+  16:16   0:00 /sbin/agetty -o -p -- \u --noclear - linux
+syslog       218  0.0  0.0 222508  5248 ?        Ssl  16:16   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         225  0.0  0.1 107024 22272 ?        Ssl  16:16   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unatt
+root         482  0.0  0.0   6692  3968 pts/1    Ss   16:17   0:00 /bin/login -f
+suhail       525  0.0  0.0  20116 10752 ?        Ss   16:17   0:00 /usr/lib/systemd/systemd --user
+suhail       526  0.0  0.0  21156  3520 ?        S    16:17   0:00 (sd-pam)
+suhail       548  0.0  0.0   6056  5120 pts/1    S+   16:17   0:00 -bash
+root         646  0.0  0.0   3124   900 ?        Ss   16:17   0:00 /init
+root         647  0.0  0.0   3140  1032 ?        S    16:17   0:00 /init
+suhail       649  0.0  0.0   6176  5120 pts/0    Ss   16:17   0:00 -bash
+root         912  0.0  0.1 370088 20352 ?        Ssl  16:17   0:00 /usr/libexec/packagekitd
+polkitd      917  0.0  0.0 308164  7424 ?        Ssl  16:17   0:00 /usr/lib/polkit-1/polkitd --no-debug
+suhail      1166  0.0  0.0   8280  4096 pts/0    R+   16:19   0:00 ps aux
+suhail@DESKTOP-8TUHE2O:~$ ps aux --sort=-%cpu | head -10
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.3  0.0  21984 12584 ?        Ss   16:16   0:00 /sbin/init
+root         109  0.0  0.0  25144  6144 ?        Ss   16:16   0:00 /usr/lib/systemd/systemd-udevd
+root          55  0.0  0.0  42164 15368 ?        S<s  16:16   0:00 /usr/lib/systemd/systemd-journald
+suhail       525  0.0  0.0  20116 10752 ?        Ss   16:17   0:00 /usr/lib/systemd/systemd --user
+root         225  0.0  0.1 107024 22272 ?        Ssl  16:16   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         197  0.0  0.0 1756620 12800 ?       Ssl  16:16   0:00 /usr/libexec/wsl-pro-service
+polkitd      917  0.0  0.0 308164  7424 ?        Ssl  16:17   0:00 /usr/lib/polkit-1/polkitd --no-debug
+root         195  0.0  0.0  17964  8320 ?        Ss   16:16   0:00 /usr/lib/systemd/systemd-logind
+systemd+     121  0.0  0.0  21460 11904 ?        Ss   16:16   0:00 /usr/lib/systemd/systemd-resolved
+suhail@DESKTOP-8TUHE2O:~$ ps aux --sort=-%mem | head -10
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         225  0.0  0.1 107024 22272 ?        Ssl  16:16   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         912  0.0  0.1 370088 20352 ?        Ssl  16:17   0:00 /usr/libexec/packagekitd
+root          55  0.0  0.0  42164 15368 ?        S<s  16:16   0:00 /usr/lib/systemd/systemd-journald
+root         197  0.0  0.0 1756620 12800 ?       Ssl  16:16   0:00 /usr/libexec/wsl-pro-service
+root           1  0.3  0.0  21984 12584 ?        Ss   16:16   0:00 /sbin/init
+systemd+     121  0.0  0.0  21460 11904 ?        Ss   16:16   0:00 /usr/lib/systemd/systemd-resolved
+suhail       525  0.0  0.0  20116 10752 ?        Ss   16:17   0:00 /usr/lib/systemd/systemd --user
+root         195  0.0  0.0  17964  8320 ?        Ss   16:16   0:00 /usr/lib/systemd/systemd-logind
+systemd+     122  0.0  0.0  91028  7680 ?        Ssl  16:16   0:00 /usr/lib/systemd/systemd-timesyncd
+suhail@DESKTOP-8TUHE2O:~$ nano monitor.sh
+  GNU nano 7.2                                   monitor.sh
+#!/bin/bash
+
+LOGFILE="/var/log/system_monitor.log"
+
+echo "===== System Monitoring Report =====" >> $LOGFILE
+date >> $LOGFILE
+
+echo "--- CPU & Memory Usage ---" >> $LOGFILE
+top -b -n1 | head -10 >> $LOGFILE
+
+echo "--- Disk Usage ---" >> $LOGFILE
+df -h >> $LOGFILE
+
+echo "--- Top Processes (CPU) ---" >> $LOGFILE
+ps aux --sort=-%cpu | head -5 >> $LOGFILE
+
+echo "--- Top Processes (Memory) ---" >> $LOGFILE
+ps aux --sort=-%mem | head -5 >> $LOGFILE
+
+echo "====================================" >> $LOGFILE
+echo "" >> $LOGFILE
+suhail@DESKTOP-8TUHE2O:~$ chmod +x monitor.sh
+suhail@DESKTOP-8TUHE2O:~$ sudo ./monitor.sh
+suhail@DESKTOP-8TUHE2O:~$ cat /var/log/system_monitor.log
+===== System Monitoring Report =====
+Tue Mar 31 16:20:54 UTC 2026
+--- CPU & Memory Usage ---
+top - 16:20:54 up 4 min,  1 user,  load average: 0.02, 0.06, 0.03
+Tasks:  29 total,   1 running,  28 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.8 sy,  0.0 ni, 99.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :  15955.2 total,  14747.3 free,    560.9 used,    852.4 buff/cache
+MiB Swap:   4096.0 total,   4096.0 free,      0.0 used.  15394.3 avail Mem
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0   21984  12584   9256 S   0.0   0.1   0:00.63 systemd
+      2 root      20   0    3120   1920   1920 S   0.0   0.0   0:00.06 init-sy+
+      9 root      20   0    3136   1792   1792 S   0.0   0.0   0:00.00 init
+--- Disk Usage ---
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdd       1007G  1.6G  955G   1% /
+rootfs          7.8G  2.7M  7.8G   1% /init
+none            7.8G     0  7.8G   0% /dev/shm
+none            7.8G  520K  7.8G   1% /run
+none            7.8G     0  7.8G   0% /run/lock
+none            7.8G   76K  7.8G   1% /run/user
+tmpfs           1.6G   20K  1.6G   1% /run/user/1000
+drivers         477G  398G   79G  84% /usr/lib/wsl/drivers
+none            7.8G     0  7.8G   0% /usr/lib/wsl/lib
+none            7.8G  4.0K  7.8G   1% /mnt/wsl
+none            7.8G   76K  7.8G   1% /mnt/wslg/versions.txt
+none            7.8G   76K  7.8G   1% /mnt/wslg/doc
+none            7.8G     0  7.8G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+C:\             477G  398G   79G  84% /mnt/c
+D:\             233G   89G  144G  39% /mnt/d
+E:\             1.9T  1.6T  244G  87% /mnt/e
+G:\             210G  164G   47G  78% /mnt/g
+--- Top Processes (CPU) ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.2  0.0  21984 12584 ?        Ss   16:16   0:00 /sbin/init
+root         109  0.0  0.0  25144  6144 ?        Ss   16:16   0:00 /usr/lib/systemd/systemd-udevd
+root          55  0.0  0.0  42164 15368 ?        S<s  16:16   0:00 /usr/lib/systemd/systemd-journald
+suhail       525  0.0  0.0  20116 10752 ?        Ss   16:17   0:00 /usr/lib/systemd/systemd --user
+--- Top Processes (Memory) ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         225  0.0  0.1 107024 22272 ?        Ssl  16:16   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         912  0.0  0.1 370088 20352 ?        Ssl  16:17   0:00 /usr/libexec/packagekitd
+root          55  0.0  0.0  42164 15368 ?        S<s  16:16   0:00 /usr/lib/systemd/systemd-journald
+root         197  0.0  0.0 1756620 12800 ?       Ssl  16:16   0:00 /usr/libexec/wsl-pro-service
+====================================
+suhail@DESKTOP-8TUHE2O:~$ crontab -e
+no crontab for suhail - using an empty one
+
+Select an editor.  To change later, run 'select-editor'.
+  1. /bin/nano        <---- easiest
+  2. /usr/bin/vim.basic
+  3. /usr/bin/vim.tiny
+  4. /bin/ed
+
+Choose 1-4 [1]: */5 * * * * /path/to/monitor.sh
+Choose 1-4 [1]: 1
+crontab: installing new crontab
+suhail@DESKTOP-8TUHE2O:~$ sudo adduser sarah
+info: Adding user `sarah' ...
+info: Selecting UID/GID from range 1000 to 59999 ...
+info: Adding new group `sarah' (1001) ...
+info: Adding new user `sarah' (1001) with group `sarah (1001)' ...
+info: Creating home directory `/home/sarah' ...
+info: Copying files from `/etc/skel' ...
+New password:
+Retype new password:
+passwd: password updated successfully
+Changing the user information for sarah
+Enter the new value, or press ENTER for the default
+        Full Name []: sarah
+        Room Number []:
+        Work Phone []:
+        Home Phone []:
+        Other []:
+Is the information correct? [Y/n] y
+info: Adding new user `sarah' to supplemental / extra groups `users' ...
+info: Adding user `sarah' to group `users' ...
+suhail@DESKTOP-8TUHE2O:~$ sudo adduser mike
+info: Adding user `mike' ...
+info: Selecting UID/GID from range 1000 to 59999 ...
+info: Adding new group `mike' (1002) ...
+info: Adding new user `mike' (1002) with group `mike (1002)' ...
+info: Creating home directory `/home/mike' ...
+info: Copying files from `/etc/skel' ...
+New password:
+Retype new password:
+passwd: password updated successfully
+Changing the user information for mike
+Enter the new value, or press ENTER for the default
+        Full Name []: mike
+        Room Number []:
+        Work Phone []:
+        Home Phone []:
+        Other []:
+Is the information correct? [Y/n]
+info: Adding new user `mike' to supplemental / extra groups `users' ...
+info: Adding user `mike' to group `users' ...
+suhail@DESKTOP-8TUHE2O:~$ sudo mkdir -p /home/sarah/workspace
+suhail@DESKTOP-8TUHE2O:~$ sudo mkdir -p /home/mike/workspace
+suhail@DESKTOP-8TUHE2O:~$ sudo chown -R sarah:sarah /home/sarah/workspace
+suhail@DESKTOP-8TUHE2O:~$ sudo chown -R mike:mike /home/mike/workspace
+suhail@DESKTOP-8TUHE2O:~$ sudo chmod 777 /home/sarah/workspace
+suhail@DESKTOP-8TUHE2O:~$ sudo chmod 777 /home/mike/workspace
+suhail@DESKTOP-8TUHE2O:~$ su - mike
+Password:
+Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.6.87.2-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Tue Mar 31 16:37:13 UTC 2026
+
+  System load:  0.0                 Processes:             31
+  Usage of /:   0.2% of 1006.85GB   Users logged in:       1
+  Memory usage: 3%                  IPv4 address for eth0: 172.20.140.218
+  Swap usage:   0%
+
+
+This message is shown once a day. To disable it please create the
+/home/mike/.hushlogin file.
+mike@DESKTOP-8TUHE2O:~$ cd /home/sarah/workspace
+-bash: cd: /home/sarah/workspace: Permission denied
+mike@DESKTOP-8TUHE2O:~$ sudo chage -M 30 sarah
+[sudo] password for mike:
+mike is not in the sudoers file.
+mike@DESKTOP-8TUHE2O:~$ su
+Password:
+su: Authentication failure
+mike@DESKTOP-8TUHE2O:~$ su - suhail
+Password:
+suhail@DESKTOP-8TUHE2O:~$ sudo chage -m 1 -M 30 -W 7 sarah
+[sudo] password for suhail:
+suhail@DESKTOP-8TUHE2O:~$ sudo chage -m 1 -M 30 -W 7 mike
+suhail@DESKTOP-8TUHE2O:~$ sudo chage -l sarah
+Last password change                                    : Mar 31, 2026
+Password expires                                        : Apr 30, 2026
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : 1
+Maximum number of days between password change          : 30
+Number of days of warning before password expires       : 7
+suhail@DESKTOP-8TUHE2O:~$
+suhail@DESKTOP-8TUHE2O:~$ nano monitor.sh
+suhail@DESKTOP-8TUHE2O:~$ sudo mkdir /backups
+suhail@DESKTOP-8TUHE2O:~$
+suhail@DESKTOP-8TUHE2O:~$ sudo chmod 777 /backups
+suhail@DESKTOP-8TUHE2O:~$ nano /home/sarah/apache_backup.sh
+suhail@DESKTOP-8TUHE2O:~$ sudo nano /home/sarah/apache_backup.sh
+suhail@DESKTOP-8TUHE2O:~$ sudo nano /home/sarah/apache_backup.sh
+#!/bin/bash
+
+DATE=$(date +%F)
+BACKUP_FILE="/backups/apache_backup_$DATE.tar.gz"
+LOG_FILE="/backups/apache_backup.log"
+
+tar -czf $BACKUP_FILE /etc/httpd/ /var/www/html/ 2>/dev/null
+
+echo "Backup created: $BACKUP_FILE" >> $LOG_FILE
+
+echo "Verifying backup..." >> $LOG_FILE
+tar -tzf $BACKUP_FILE >> $LOG_FILE
+
+echo "---------------------------------" >> $LOG_FILE
+
+suhail@DESKTOP-8TUHE2O:~$ chmod +x /home/sarah/apache_backup.sh
+chmod: cannot access '/home/sarah/apache_backup.sh': Permission denied
+suhail@DESKTOP-8TUHE2O:~$ sudo chmod +x /home/sarah/apache_backup.sh
+suhail@DESKTOP-8TUHE2O:~$ sudo chown sarah:sarah /home/sarah/apache_backup.sh
+suhail@DESKTOP-8TUHE2O:~$ sudo nano /home/mike/nginx_backup.sh
+suhail@DESKTOP-8TUHE2O:~$ sudo nano /home/mike/nginx_backup.sh
+
+  GNU nano 7.2                           /home/mike/nginx_backup.sh
+#!/bin/bash
+
+DATE=$(date +%F)
+BACKUP_FILE="/backups/nginx_backup_$DATE.tar.gz"
+LOG_FILE="/backups/nginx_backup.log"
+
+tar -czf $BACKUP_FILE /etc/nginx/ /usr/share/nginx/html/ 2>/dev/null
+
+echo "Backup created: $BACKUP_FILE" >> $LOG_FILE
+
+echo "Verifying backup..." >> $LOG_FILE
+tar -tzf $BACKUP_FILE >> $LOG_FILE
+
+echo "---------------------------------" >> $LOG_FILE
+suhail@DESKTOP-8TUHE2O:~$ sudo chmod +x /home/mike/nginx_backup.sh
+suhail@DESKTOP-8TUHE2O:~$ sudo chown mike:mike /home/mike/nginx_backup.sh
+suhail@DESKTOP-8TUHE2O:~$ sudo crontab -u sarah -e
+no crontab for sarah - using an empty one
+
+Select an editor.  To change later, run 'select-editor'.
+  1. /bin/nano        <---- easiest
+  2. /usr/bin/vim.basic
+  3. /usr/bin/vim.tiny
+  4. /bin/ed
+
+Choose 1-4 [1]: 1
+crontab: installing new crontab
+suhail@DESKTOP-8TUHE2O:~$ sudo crontab -u mike -e
+no crontab for mike - using an empty one
+crontab: installing new crontab
+suhail@DESKTOP-8TUHE2O:~$ sudo -u sarah /home/sarah/apache_backup.sh
+suhail@DESKTOP-8TUHE2O:~$ sudo -u mike /home/mike/nginx_backup.sh
+suhail@DESKTOP-8TUHE2O:~$ ls /backups
+apache_backup.log  apache_backup_2026-03-31.tar.gz  nginx_backup.log  nginx_backup_2026-03-31.tar.gz
+suhail@DESKTOP-8TUHE2O:~$ cat /backups/apache_backup.log
+Backup created: /backups/apache_backup_2026-03-31.tar.gz
+Verifying backup...
+---------------------------------
+suhail@DESKTOP-8TUHE2O:~$ cat /backups/nginx_backup.log
+Backup created: /backups/nginx_backup_2026-03-31.tar.gz
+Verifying backup...
+---------------------------------
