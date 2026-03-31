@@ -14,6 +14,25 @@ Practice Assignment on Testing, Linux and Servers
 2. Find top CPU-consuming processes: ps aux --sort=-%cpu | head -10
 3. Find top memory-consuming processes: ps aux --sort=-%mem | head -10
 # 4. Create Monitoring Logs (Reporting System)
-1. Create Script: sudo nano monitor.sh:
+1. Create Script: sudo nano monitor.sh:   #!/bin/bash
+
+  LOGFILE="/var/log/system_monitor.log"
+
+  echo "===== System Monitoring Report =====" >> $LOGFILE
+  date >> $LOGFILE
+
+  echo "--- CPU & Memory Usage ---" >> $LOGFILE
+  top -b -n1 | head -10 >> $LOGFILE
+
+  echo "--- Disk Usage ---" >> $LOGFILE
+  df -h >> $LOGFILE
+
+  echo "--- Top Processes (CPU) ---" >> $LOGFILE
+  ps aux --sort=-%cpu | head -5 >> $LOGFILE
+
+  echo "--- Top Processes (Memory) ---" >> $LOGFILE
+  ps aux --sort=-%mem | head -5 >> $LOGFILE
+  echo "====================================" >> $LOGFILE
+  echo "" >> $LOGFILE
 2. Make Script Executable: chmod +x monitor.sh
 3. Run Script: sudo ./monitor.sh
