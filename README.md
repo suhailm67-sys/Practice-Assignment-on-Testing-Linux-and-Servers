@@ -7,7 +7,5 @@ Practice Assignment on Testing, Linux and Servers
 2. sudo apt install htop -y
 3. sudo apt install nmon -y
 # 2. Disk Usage Monitoring:
-   a. Check overall disk usage
-      # df -h
-   b. Check directory-level usage
-      # du -sh /home/*
+1. Check overall disk usage: df -h
+2. Check directory-level usage: du -sh /home/*
