@@ -110,3 +110,12 @@ echo "---------------------------------" >> $LOG_FILE
 # 6. Schedule Cron Jobs
 1. For Sarah: sudo crontab -u sarah -e;   0 0 * * 2 /home/sarah/apache_backup.sh
 2. For Mike: sudo crontab -u mike -e;  0 0 * * 2 /home/mike/nginx_backup.sh
+# 7. Test Backup Manually
+1. sudo -u sarah /home/sarah/apache_backup.sh
+2. sudo -u mike /home/mike/nginx_backup.sh
+# 8. Verify Backup Files
+1. ls /backups
+# 9. Check Logs
+1. cat /backups/apache_backup.log
+2. cat /backups/nginx_backup.log
+
