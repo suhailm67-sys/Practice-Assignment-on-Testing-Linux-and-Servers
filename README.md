@@ -1,5 +1,4 @@
 # Practice-Assignment-on-Testing-Linux-and-Servers
-Practice Assignment on Testing, Linux and Servers
 
 # Task 1: System Monitoring Setup
 # 1. Install Monitoring Tools:
